@@ -1,11 +1,23 @@
-.side-bar {
+.sidebar {
   width: 260px;
   background-color: #1a1a2e;
-  min-height: 100vh;
+  color: white;
+}
+
+.navItem {
+  padding: 12px 20px;
+  color: #b0b0c0;
+  text-decoration: none;
   transition: all 0.3s;
 }
 
-.activeLink {
+.navItem:hover {
   background-color: #16213e;
+  color: white;
+}
+
+.active {
+  background-color: #16213e;
+  color: white;
   border-left: 4px solid #0f3460;
 }

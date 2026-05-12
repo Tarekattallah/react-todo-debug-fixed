@@ -2,18 +2,37 @@ import { NavLink } from "react-router-dom";
 import styles from "./Sidebar.module.css";
 
 const Sidebar = () => {
+  const menuLinks = [
+    { 
+      icon: "fa-house", 
+      title: "Home", 
+      path: "/" 
+    },
+    { 
+      icon: "fa-list-check", 
+      title: "My Tasks", 
+      path: "/todos" 
+    },
+  ];
   return (
-    <aside className={styles.side - bar}>
+    <aside className={styles.sidebar}>
       <div className="p-4 fw-bold text-white fs-4 border-bottom border-secondary mb-3">
         <i className="fa-solid fa-check-double me-2"></i>Todo Master
       </div>
-      <nav className="nav flex-column px-2">
-        <NavLink to="/" className="nav-link text-white py-3">
-          <i className="fa-solid fa-house me-2"></i> Home
-        </NavLink>
-        <NavLink to="/todos" className="nav-link text-white py-3">
-          <i className="fa-solid fa-list-check me-2"></i> My Tasks
-        </NavLink>
+
+      <nav>
+        {menuLinks.map((item, index) => (
+          <NavLink
+            to={item.path}
+            key={index}
+            className={({ isActive }) =>
+              `${styles.navItem} d-flex align-items-center gap-3 ${isActive ? styles.active : ""}`
+            }
+          >
+            <i className={`fa-solid ${item.icon} fs-5`}></i>
+            <span className="fs-5">{item.title}</span>
+          </NavLink>
+        ))}
       </nav>
     </aside>
   );

@@ -18,8 +18,10 @@ const TodoList = () => {
       <div className="row">
         <div className="col-md-7">
           <div className="list-group shadow-sm border-0">
-            {tasks.map((t) => (
-              <TodoItem task={t} />
+            {/* miss here my and capital and task */}
+            {myTasks.map((task) => (
+              // miss key must use with map
+              <TodoItem key={task.id} task={task} />
             ))}
           </div>
         </div>

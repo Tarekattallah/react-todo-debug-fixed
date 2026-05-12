@@ -5,7 +5,7 @@ const Home = () => {
     <div className="container py-5">
       <div className="bg-white p-5 rounded-4 shadow-sm border-0">
         <h1 className="display-4 fw-bold text-dark">
-          Welcome Back, {user_name}! 👋
+          Welcome Back, {userName}! 👋
         </h1>
         <p className="lead text-muted">You have 3 tasks to complete today.</p>
         <hr className="my-4" />
