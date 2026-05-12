@@ -52,8 +52,6 @@ Install dependencies:Bashnpm install
 Start the development server:Bashnpm run dev
 Open http://localhost:5173
 
-📸 Screenshots
-(يمكنك إضافة صور هنا بعدين)
 ✅ What I Learned
 
 Proper React Router configuration
@@ -64,17 +62,3 @@ Git workflow and version control
 
 
 Made with ❤️ for React Debugging Lab
-text---
-
-### طريقة الرفع:
-
-1. افتح الملف `README.md` في مشروعك
-2. امسح كل اللي جواه
-3. الصق الكود اللي فوق
-4. احفظ
-5. ارفعه:
-
-```bash
-git add README.md
-git commit -m "Add professional README"
-git push origin fix-debug
