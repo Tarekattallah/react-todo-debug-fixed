@@ -52,6 +52,8 @@ Install dependencies:Bashnpm install
 Start the development server:Bashnpm run dev
 Open http://localhost:5173
 
+📸 Screenshots
+(يمكنك إضافة صور هنا بعدين)
 ✅ What I Learned
 
 Proper React Router configuration
