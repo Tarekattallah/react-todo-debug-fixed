@@ -1,16 +1,80 @@
-# React + Vite
+# Todo Master - React Debugging Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React.js Todo application that was intentionally broken with multiple frontend issues. The task was to debug and fix routing, state management, component errors, and UI problems.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- ✅ Clean and responsive sidebar navigation
+- ✅ Proper React Router setup (v6)
+- ✅ Dynamic Todo list with status
+- ✅ Add new task page
+- ✅ Fully functional routing between pages
+- ✅ Modern UI using Bootstrap 5 + Font Awesome
 
-## React Compiler
+## 🛠️ Issues Fixed
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Fixed missing `BrowserRouter` in `main.jsx`
+- Corrected routing configuration in `App.jsx`
+- Fixed broken CSS class names in Sidebar
+- Resolved missing imports (`useNavigate`)
+- Fixed undefined variables (`tasks`, `user_name`)
+- Improved component structure and best practices
+- Enhanced active link highlighting
 
-## Expanding the ESLint configuration
+## 🛠 Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React.js** (v19)
+- **React Router DOM** (v6)
+- **Vite**
+- **Bootstrap 5**
+- **Font Awesome**
+- **CSS Modules**
+
+## 📁 Project Structure
+src/
+├── components/
+│   ├── Sidebar.jsx
+│   └── TodoItem.jsx
+├── pages/
+│   ├── Home.jsx
+│   ├── TodoList.jsx
+│   └── AddTodo.jsx
+├── App.jsx
+├── main.jsx
+└── ...
+text## 🚀 How to Run
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Tarekattallah/react-todo-debug-fixed.git
+
+Install dependencies:Bashnpm install
+Start the development server:Bashnpm run dev
+Open http://localhost:5173
+
+📸 Screenshots
+(يمكنك إضافة صور هنا بعدين)
+✅ What I Learned
+
+Proper React Router configuration
+Debugging common React errors
+Component organization and reusability
+Working with CSS Modules
+Git workflow and version control
+
+
+Made with ❤️ for React Debugging Lab
+text---
+
+### طريقة الرفع:
+
+1. افتح الملف `README.md` في مشروعك
+2. امسح كل اللي جواه
+3. الصق الكود اللي فوق
+4. احفظ
+5. ارفعه:
+
+```bash
+git add README.md
+git commit -m "Add professional README"
+git push origin fix-debug
